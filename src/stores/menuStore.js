@@ -1,20 +1,22 @@
-import { defineStore } from 'pinia';
+import { defineStore} from 'pinia'
+import { sidebarMenus } from './sidebarMenu'
 
-export const useMenuStore = defineStore ('menu', {
-  //sate : Data yang disimpan
-  state:()=>({
-    items:[
-      {title : 'Dashboard'},
-      {title : 'Penjualan'},
-      {title : 'Pembelian'},
-      {title : 'Items'}],
-      isSidebarCollapsed:false
-  }),
-  // Getters : computed properties untuk state
-  Getters : {
-    visibleItems : (state) => state.Items.filter(item => !item.hidden),
-  },
-  //Action : untuk memodifikasi state
-  actions : {
-  },
+export const useMenuStore = defineStore('sidebar',{
+ state : () => ({
+   menus : sidebarMenus,
+   selectedMenuId : null
+ }),
+   getters: {
+     activeMenu(state){
+       return state.menus.find(menu => menu.id === state.selectedMenuId)
+     }
+   },
+   actions:{
+     selectMenu(id){
+       this.selectedMenuId = id
+     },
+     resetMenu(id){
+       this.selectedMenuId = null
+     }
+   }
 })
