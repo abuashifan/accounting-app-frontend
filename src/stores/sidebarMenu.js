@@ -1,7 +1,7 @@
 // src/stores/sidebarMenus.js
 
 export const sidebarMenus = [
-  { id: 1, label: "Dashboard", icon: "", route: "/dashboard" },
+  { id: 1, label: "Pengaturan", icon: "", route: "/dashboard" },
   { id: 2, label: "Perusahaan", icon: "mdi-account", route: "/users" },
   { id: 3, label: "Buku Besar", icon: "mdi-cog", route: "/settings" },
   { id: 4, label: "Kas & Bank", icon: "mdi-bank", route: "/settings" },

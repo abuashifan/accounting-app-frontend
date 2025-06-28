@@ -28,5 +28,8 @@
 </template>
 <script setup>
   import {useMenuStore} from '@/stores/menuStore'
+  import { mdiPaths } from '@/components/icons/IconList.js'
+  
   const menuStore = useMenuStore()
+  
 </script>
