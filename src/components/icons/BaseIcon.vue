@@ -1,13 +1,18 @@
-<script setup>
-  defineProps({
-  path: {
-  
-  }
-  })
-</script>
 <template>
-  
+  <div>
+
+  </div>
 </template>
-<style scoped>
-  
+
+<script setup>
+defineProps ({
+  path : {
+    type : string,
+    
+  }
+})
+</script>
+
+<style lang="scss" scoped>
+
 </style>
