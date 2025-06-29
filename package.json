@@ -24,6 +24,7 @@
     "eslint": "^9.22.0",
     "eslint-plugin-vue": "~10.0.0",
     "globals": "^16.0.0",
+    "sass-embedded": "^1.89.2",
     "tailwindcss": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.1.tgz",
     "vite": "^6.2.4",
     "vite-plugin-vue-devtools": "^7.7.2"

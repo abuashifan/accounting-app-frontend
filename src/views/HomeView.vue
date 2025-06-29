@@ -1,6 +1,6 @@
 <script setup>
-import Sidebar from '@/components/Sidebar.vue'
-import Navbar from '@/components/Navbar.vue'
+import Sidebar from '@/components/sidebar-component.vue'
+import Navbar from '@/components/navbar-component.vue'
 
 </script>
 
@@ -11,10 +11,10 @@ import Navbar from '@/components/Navbar.vue'
     <Navbar/>
   </div>
   </div>
-  
+
 
 </template>
 
 <style scoped="">
-  
+
 </style>
