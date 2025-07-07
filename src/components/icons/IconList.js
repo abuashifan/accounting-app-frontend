@@ -6,7 +6,13 @@ import {
   mdiBookOpen,
   mdiCartOutline,
   mdiCashFast,
-  mdiDomain
+  mdiDomain,
+  mdiViewDashboard,
+  mdiOfficeBuildingCog,
+  mdiCubeOutline,
+  mdiChartBox,
+  mdiHomeGroup
+
 } from '@mdi/js';
 
 // Daftar icon path
@@ -16,7 +22,12 @@ export const mdiPaths = {
   book: mdiBookOpen,
   cart: mdiCartOutline,
   cash: mdiCashFast,
-  domain: mdiDomain
+  domain: mdiDomain,
+  dashboard:mdiViewDashboard,
+  office:mdiOfficeBuildingCog,
+  inventory : mdiCubeOutline,
+  report : mdiChartBox,
+  asset : mdiHomeGroup
 };
 
 // Plugin untuk register component dan provide icons

@@ -13,7 +13,7 @@
          :key="menu.id"
          >
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-            <svg-icon type="mdi" :path="path"></svg-icon>
+              <baseIcon :name="menu.icon" size="32px" color="blue" title="User"/>
                <span class="ms-3">{{menu.label}}</span>
             </a>
          </li>
@@ -25,10 +25,8 @@
 </template>
 <script setup>
   import {useMenuStore} from '@/stores/menuStore'
-  import SvgIcon from '@jamescoyle/vue-icon'
-  import { mdiAccount } from '@mdi/js'
+  import baseIcon from './icons/base-icon.vue';
 
-  const path = mdiAccount
   const menuStore = useMenuStore()
 
 </script>
