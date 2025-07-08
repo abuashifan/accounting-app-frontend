@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { sidebarMenus } from './sidebarMenus'
+import { sidebarMenus } from './sidebarMenu'
 
 export const useMenuStore = defineStore('menu', {
   state: () => ({
